@@ -5,7 +5,7 @@ metadata:
   labels:
     {{- include "cmak.labels" . | nindent 4 }}
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
     - name: zk
       port: 2181
